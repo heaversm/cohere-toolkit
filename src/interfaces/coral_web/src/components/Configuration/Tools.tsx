@@ -123,7 +123,7 @@ const ToolSection = () => {
                       label={
                         <div className="flex flex-col gap-y-2">
                           {description && <Text>{description}</Text>}
-                          {error_message && (
+                          {error_message && disabled && (
                             <Text className="text-danger-500">Error: {error_message}</Text>
                           )}
                         </div>
